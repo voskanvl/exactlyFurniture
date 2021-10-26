@@ -51,6 +51,7 @@ module.exports = {
       errors: true,
     },
     quiet: true,
+    port: 3000,
   },
   module: {
     rules: [{
@@ -173,19 +174,20 @@ module.exports = {
       include: [
         path.resolve(__dirname, './src/assets/svg/monocolor'),
       ],
-      loaders: [{
-        loader: 'svg-sprite-loader',
-      },
-      {
-        loader: 'svgo-loader',
-        options: {
-          plugins: [
-            { removeUselessStrokeAndFill: true },
-            { removeAttrs: { attrs: '(fill|id|fill-opacity)' } },
-            { removeStyleElement: true },
-          ],
+      loaders: [
+        {
+          loader: 'svg-sprite-loader',
         },
-      }],
+        {
+          loader: 'svgo-loader',
+          options: {
+            plugins: [
+              { removeUselessStrokeAndFill: true },
+              { removeAttrs: { attrs: '(fill|id|fill-opacity)' } },
+              { removeStyleElement: true },
+            ],
+          },
+        }],
     },
 
     {

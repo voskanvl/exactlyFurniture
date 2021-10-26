@@ -10,11 +10,12 @@
         <header class="header">
             <div class="header__container">
               <div class="header__body">
-                <nav class="header__menu">
-                    <div class="header__burger">
-                      <!-- TODO:вставить svg burger -->
-                      <img src="assets/burger.jpg" alt="burger">
-                    </div>
+                <div class="header__burger" onclick="menu.classList.toggle('header__menu_show')">
+                  <!-- TODO:вставить svg burger -->
+                  <img src="assets/burger.jpg" alt="burger">
+                </div>
+                <nav class="header__menu" id="menu">
+                  <!-- TODO:удалить id -->
                     <ul class="header__list">
                         <li class="header__menu-item">
                             <a href="" class="header__link">Вся мебель</a>
@@ -46,7 +47,7 @@
                 </div>
                 <div class="phone header__phone">
                   <a href="tel:+79876543210" class="phone__link">
-                    <img src="assets/phone.jpg" alt="" class="phone__icon">
+                    <img src="assets/phone.jpg" alt="phone" class="phone__icon">
                   </a>
                   <div class="phone__number">+7 987 654-32-10</div>
                   <div class="work-time">Ежедневно с 09:00 - 20:00</div>

@@ -7,15 +7,17 @@
         <title>Hello World</title>
     </head>
     <body>
+      <div id="vue-app"></div>
         <header class="header">
-            <div class="header__container">
+            <div class="container header__container">
               <div class="header__body">
-                <div class="header__burger" onclick="menu.classList.toggle('header__menu_show')">
+                <div class="header__burger" onclick="menu.classList.toggle('header__menu_show'); document.body.classList.add('stop-scroll');">
                   <!-- TODO:вставить svg burger -->
                   <img src="assets/burger.jpg" alt="burger">
                 </div>
                 <nav class="header__menu" id="menu">
                   <!-- TODO:удалить id -->
+                  <button class="header__close-menu" onclick="menu.classList.remove('header__menu_show'); document.body.classList.remove('stop-scroll');">x</button>
                     <ul class="header__list">
                         <li class="header__menu-item">
                             <a href="" class="header__link">Вся мебель</a>
@@ -41,16 +43,16 @@
                     <!-- <img src="assets/logo.jpg" alt="" /> -->
                 </a>
                 <div class="header__finder">
-                  <input type="text" class="input finder__input">
-                  <!-- TODO:вставить svg finder -->
-                  <img src="assets/finder.jpg" alt="" class="finder__logo">
+                    <input type="text" class="input finder__input">
+                    <!-- TODO:вставить svg finder -->
+                    <img src="assets/finder.jpg" alt="" class="finder__logo">
                 </div>
-                <div class="phone header__phone">
+                <div class="phone header__phone ">
                   <a href="tel:+79876543210" class="phone__link">
                     <img src="assets/phone.jpg" alt="phone" class="phone__icon">
                   </a>
-                  <div class="phone__number">+7 987 654-32-10</div>
-                  <div class="work-time">Ежедневно с 09:00 - 20:00</div>
+                  <div class="phone__number phone__number_strong">+7 987 654-32-10</div>
+                  <div class="work-time phone__work-time phone__work-time_small">Ежедневно с 09:00 - 20:00</div>
                 </div>
             </div>
           </div>

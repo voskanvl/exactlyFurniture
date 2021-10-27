@@ -1,0 +1,16 @@
+.header__header{
+    padding: 1rem;
+    position: relative;
+    display: grid;
+    place-items: center start;
+    grid-template-columns: 100px 200px auto 60px;
+    grid-gap: .5rem;
+    grid-template-areas: "show logo find contacts";
+    background-color: #eee;
+    position: fixed;
+    width: 100%;
+     @media (min-width: 768px) {
+      grid-template-columns:  0 150px auto 200px;
+    }
+    
+}

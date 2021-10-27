@@ -7,6 +7,7 @@
         <title>Hello World</title>
     </head>
     <body>
+        <!-- TODO: удалить не нужные шрифты из fonts.less -->
         <svg xmlns="http://www.w3.org/2000/svg" display="none">
             <symbol id="burger" viewBox="0 0 24 24">
                 <path
@@ -93,17 +94,17 @@
                     <div class="menu__wrap">
                         <div class="menu__header">
                             <div class="menu__close">x</div>
-                            <button class="menu__burger">
-                                <svg class="menu__burger-icon icon">
-                                    <use xlink:href="#burger"></use>
-                                </svg>
-                            </button>
                             <div class="logo menu__logo">
                                 <img src="assets/logo.jpg" alt="logo" class="menu__img">
                             </div>
                         </div>
-                        <ul class="menu__content">
-                            <li class="menu__item">
+                        <ul class="menu__content" style='padding:1rem'>
+                            <li class="menu__item" >
+                                <button class="menu__burger">
+                                    <svg class="menu__burger-icon icon menu__item-icon">
+                                        <use xlink:href="#burger"></use>
+                                    </svg>
+                                </button>
                                 <a  href="#" class="menu__item-title">Вся мебель</a >
                                 <ul class="menu menu__submenu">
                                     <li class="menu__item menu__submenu-item">
@@ -145,30 +146,25 @@
                                 </ul>
                             </li>
                             <li class="menu__item">
-                                <svg class="icon menu__item-icon"></svg>
                                 <a  href="#" class="menu__item-title">Выставочные залы</a >
                             </li>
                             <li class="menu__item">
-                                <svg class="icon menu__item-icon"></svg>
                                 <a  href="#" class="menu__item-title">О нас</a >
                             </li>
                             <li class="menu__item">
-                                <svg class="icon menu__item-icon"></svg>
                                 <a  href="#" class="menu__item-title">Новости</a >
                             </li>
                             <li class="menu__item">
-                                <svg class="icon menu__item-icon"></svg>
                                 <a  href="#" class="menu__item-title">Отзывы</a >
                             </li>
                             <li class="menu__item">
-                                <svg class="icon menu__item-icon"></svg>
                                 <a  href="#" class="menu__item-title">Контакты</a >
                             </li>
                         </ul>
                         <div class="menu__footer">
                             <div class="contacts menu__contacts">
                                 <div class="menu__contacts-wrap">
-                                    <svg class="menu__contacts-icon icon">
+                                    <svg class="menu__contacts-icon icon menu__item-icon">
                                         <use xlink:href="#phone"
                                     </svg>
                                     <div class="menu__phone">+7 987 654-32-10</div>

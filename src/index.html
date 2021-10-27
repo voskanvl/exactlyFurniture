@@ -59,139 +59,67 @@
                 <path d="M21.5 21h2v7h-2zM29.5 21h2v7h-2z" />
             </symbol>
         </svg>
-        <div id="vue-app"></div>
         <header class="header">
-            <div class="container header__container">
-                <div class="header__body">
-                    <div
-                        class="burger header__burger"
-                        onclick="menu.classList.toggle('header__menu_show'); document.body.classList.add('stop-scroll');"
-                    >
-                        <!-- TODO:вставить svg burger -->
-                        <svg class="svg-icon burger__svg">
+            <div class="header__wrap">
+                <div class="header__header">
+                    <button class="show-menu">
+                        <svg class="show-menu__icon icon">
                             <use xlink:href="#burger"></use>
                         </svg>
-                        <!-- <img src="assets/burger.jpg" alt="burger"> -->
+                    </button>
+                    <div class="logo header__logo">
+                        <img src="assets/logo.jpg" alt="logo" class="header__img">
                     </div>
-                    <nav class="menu header__menu" id="menu">
-                        <!-- TODO:удалить id -->
-                        <button
-                            class="header__close-menu"
-                            onclick="menu.classList.remove('header__menu_show'); document.body.classList.remove('stop-scroll');"
-                        >
-                            x
-                        </button>
-                        <ul class="header__list">
-                            <li class="header__menu-item">
-                                <a href="" class="header__link">Вся мебель</a>
-                                <nav class="menu"></nav>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="" class="header__link"
-                                    >Выставочные залы</a
-                                >
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="" class="header__link">О нас</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="" class="header__link">Новости</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="" class="header__link">Отзывы</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="" class="header__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <a class="logo header__logo">
-                        <!-- <img src="assets/logo.jpg" alt="" /> -->
-                    </a>
                     <div class="finder header__finder">
-                        <input type="text" class="input finder__input" />
-                        <!-- TODO:вставить svg finder -->
-                        <svg class="svg-icon finder__svg">
-                            <use xlink:href="#find"></use>
-                        </svg>
-                    </div>
-                    <div class="phone header__phone ">
-                        <a href="tel:+79876543210" class="phone__link">
-                            <svg class="svg-icon phone__svg">
-                                <use xlink:href="#phone"></use>
+                        <div class="finder__wrap">
+                            <input type="text" class="finder__input">
+                            <svg class="icon finder__icon">
+                                <use xlink:href="#find"></use>
                             </svg>
-                        </a>
-                        <div class="phone__number phone__number_strong">
-                            +7 987 654-32-10
                         </div>
-                        <div
-                            class="work-time phone__work-time phone__work-time_small"
-                        >
-                            Ежедневно с 09:00 - 20:00
+                    </div>
+                    <div class="contacts header__contacts">
+                        <div class="contacts__wrap">
+                            <svg class="contacts__icon icon">
+                                <use xlink:href="#phone"
+                            </svg>
+                            <div class="contacts__phone">+7 987 654-32-10</div>
+                            <div class="contacts__work-time">Ежедневно с 09:20 - 20:00</div>
                         </div>
                     </div>
                 </div>
+                <nav class="menu header__menu">
+                    <div class="menu__wrap">
+                        <div class="menu__header">
+                            <div class="menu__close">x</div>
+                            <button class="menu__burger">
+                                <svg class="menu__burger-icon icon">
+                                    <use xlink:href="#burger"></use>
+                                </svg>
+                            </button>
+                            <div class="menu__icon logo">
+                                
+                            </div>
+                        </div>
+                        <ul class="menu__content"></ul>
+                        <div class="menu__footer">
+                            <div class="contacts menu__contacts">
+                                <div class="menu__contacts-wrap">
+                                    <svg class="menu__contacts-icon icon">
+                                        <use xlink:href="#phone"
+                                    </svg>
+                                    <div class="menu__phone">+7 987 654-32-10</div>
+                                    <div class="menu__work-time">Ежедневно с 09:20 - 20:00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
             </div>
         </header>
         <div class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            soluta autem aspernatur quam nihil incidunt fugit earum obcaecati
-            pariatur repellat perspiciatis mollitia impedit et maiores, corrupti
-            ad doloribus asperiores quis, non iure dignissimos. Repudiandae,
-            fugit repellat ducimus ab architecto necessitatibus quo velit, iste
-            esse culpa alias saepe qui non impedit, placeat perferendis.
-            Repudiandae sunt corporis hic! Deleniti aperiam beatae earum ipsa
-            fuga cum, sed aspernatur repellendus? Temporibus, quaerat aut. Odit,
-            tempora. Fuga quidem quos perspiciatis illum tempore dolorem
-            perferendis nesciunt voluptatum iusto temporibus ducimus minus
-            exercitationem deleniti id dolor animi nobis earum, necessitatibus
-            iste repellat quo asperiores aperiam omnis excepturi! Dolores
-            voluptates recusandae tenetur quisquam sed consectetur. Voluptatum,
-            accusamus? Ipsam aspernatur vero deleniti officiis beatae? Numquam
-            ipsum, rem adipisci modi error vitae, porro, nemo amet quaerat
-            quisquam nesciunt labore velit consequatur praesentium nihil dolores
-            sed? Eius expedita accusamus fugit corporis excepturi quod
-            exercitationem cupiditate eaque facilis iste quaerat vel cum
-            reprehenderit ab quas aspernatur modi illum, repellat atque. Nihil
-            nam aliquid quas tempore vel accusantium ea laborum eveniet velit
-            odit. Odit fugit similique, animi dolorum maiores laboriosam?
-            Impedit, sint perspiciatis, at assumenda officiis hic natus sit,
-            blanditiis soluta voluptatibus qui iure voluptate mollitia atque ad!
-            Earum molestias assumenda sit dolorum nesciunt dolorem deleniti, non
-            aspernatur. Ad maiores laboriosam maxime necessitatibus porro, ex
-            laudantium quod praesentium cupiditate voluptatum quisquam! Alias
-            hic, illo est voluptatem expedita non numquam eius consequatur magni
-            quaerat veritatis obcaecati quo aut aspernatur odio. Architecto,
-            assumenda deleniti. Rerum atque voluptatibus, molestias natus
-            cupiditate deserunt dolore nesciunt blanditiis quasi, reiciendis
-            laborum vero provident soluta, obcaecati ducimus ipsa beatae sed
-            saepe dolor labore architecto numquam. Incidunt vitae debitis
-            tenetur vel quo deleniti magnam odit eligendi voluptatibus, esse
-            nisi et unde reiciendis sequi placeat praesentium, doloribus quos
-            exercitationem fuga modi mollitia accusantium! Dolorum totam
-            voluptatibus soluta reprehenderit, iste illum officia quas ipsa
-            nobis iusto, saepe, obcaecati voluptates eum est ab quasi delectus
-            architecto! Aliquid qui ea soluta natus libero corrupti eligendi
-            distinctio commodi, itaque delectus, aut tempora odit omnis
-            assumenda, laudantium eum asperiores rerum earum dolor consequatur
-            nemo vel error. At vero officia aliquid nulla pariatur asperiores
-            tempora rerum aperiam officiis dolores iusto, eligendi harum hic
-            aut, ad tempore earum, unde corrupti ullam nemo perspiciatis
-            explicabo quod maxime eveniet. Distinctio repellat itaque ea eaque
-            dolore odio dolorem rerum at, perferendis delectus impedit nesciunt
-            modi quasi explicabo, dolorum quo repellendus error esse saepe
-            officia perspiciatis recusandae facilis illo! Deleniti, ex saepe
-            modi accusantium qui, placeat et nulla magni nostrum animi eum vero
-            esse excepturi blanditiis incidunt cumque? Natus, odit enim! Rem,
-            animi. Unde iure natus autem et, commodi fugiat iusto deleniti
-            placeat nobis consectetur tempore animi, quidem eveniet sint minima
-            alias cumque reprehenderit id rem officia sapiente non iste eos
-            impedit. Consectetur nam unde rem, quis aut, voluptas dignissimos
-            maiores magnam architecto iste tempore velit. Eaque mollitia
-            necessitatibus iusto repudiandae sequi iure ea tempora repellendus
-            laboriosam veniam, saepe esse veritatis placeat nostrum consequatur
-            aut rem rerum ipsam eos pariatur? Aliquam earum nobis tempora, saepe
-            laudantium assumenda molestias, veniam dignissimos eius beatae quam.
+            <div class="content__wrap"></div>
         </div>
     </body>
 </html>

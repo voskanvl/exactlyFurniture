@@ -1,3 +1,13 @@
+@import "../../less/variables.less";
 .menu__submenu{
     padding: 1rem 0;
+    @media (min-width:768px){
+        display: flex;
+        position: absolute;
+        left: 0;
+        padding: 0;
+        width: 100%;
+        background-color: @color-text;
+        justify-content: stretch;
+    }
 }

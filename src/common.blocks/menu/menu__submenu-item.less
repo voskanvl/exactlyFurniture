@@ -1,5 +1,18 @@
+@import "../../less/variables.less";
 .menu__submenu-item{
-    flex-direction: row;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    grid-gap: 2rem;
+    place-items: center start;
+    @media (min-width:768px){
+        flex: 1 1;
+        padding: 1rem !important;
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        place-items: center center;
+        grid-gap: 0;
+        &:hover{
+            background-color: @color-test;
+        }
+    }
 }

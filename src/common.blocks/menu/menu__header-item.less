@@ -1,0 +1,14 @@
+@import "../../less/variables.less";
+.menu__header-item {
+    @media (min-width: 768px) {
+        padding: 1rem;
+        &:hover {
+            background-color: @color-text;
+        }
+        &:not(:first-child) {
+            display: flex;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../less/variables.less";
+.tag {
+    position: relative;
+    margin: 8px 0;
+    width: fit-content;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    background-color: @color-test;
+    border-radius: 4px;
+    &::before {
+        box-shadow: 0 4px 8px rgba(50, 50, 71, 0.06);
+        mix-blend-mode: multiply;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    &::after {
+        box-shadow: 0 4px 4px rgba(50, 50, 71, 0.08);
+        mix-blend-mode: multiply;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}

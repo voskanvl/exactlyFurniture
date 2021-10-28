@@ -1,7 +1,10 @@
 @import "../../less/variables.less";
 .menu__submenu{
     padding: 1rem 0;
+    transition: opacity linear 300ms;
     @media (min-width:768px){
+        opacity: 0;
+        position: fixed;
         display: flex;
         position: absolute;
         left: 0;
@@ -9,5 +12,8 @@
         width: 100%;
         background-color: @color-text;
         justify-content: stretch;
+    }
+    &_show{
+        opacity: 1;
     }
 }

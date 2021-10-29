@@ -8,6 +8,9 @@
     </head>
     <body>
         <svg xmlns="http://www.w3.org/2000/svg" display="none">
+            <symbol id="input-search" viewBox="0 0 18 18">
+                    <path d="M12.5674 11H11.7794L11.5002 10.73C12.4776 9.59 13.066 8.11 13.066 6.5C13.066 2.91 10.1637 0 6.58325 0C3.00276 0 0.100464 2.91 0.100464 6.5C0.100464 10.09 3.00276 13 6.58325 13C8.18898 13 9.66506 12.41 10.802 11.43L11.0713 11.71V12.5L16.0581 17.49L17.5441 16L12.5674 11ZM6.58325 11C4.09984 11 2.09517 8.99 2.09517 6.5C2.09517 4.01 4.09984 2 6.58325 2C9.06665 2 11.0713 4.01 11.0713 6.5C11.0713 8.99 9.06665 11 6.58325 11Z" fill="#A0A0A0"/>
+            </symbol>
             <symbol id="filter" viewBox="0 0 16 16">
                 <path
                     d="M0.250001 1.61C2.57 4.59 6 9 6 9V14C6 15.1 6.9 16 8 16C9.1 16 10 15.1 10 14V9C10 9 13.43 4.59 15.75 1.61C16.26 0.95 15.79 0 14.95 0H1.04C0.210001 0 -0.259999 0.95 0.250001 1.61Z"
@@ -148,13 +151,18 @@
                             <use xlink:href="#logo-light"></use>
                         </svg>
                     </div>
-                    <div class="finder header__finder">
-                        <div class="finder__wrap">
-                            <input type="text" class="finder__input" />
+                    <div class="finder">
+                            <div class="finder__input">
+                                <div class="finder__input-container">
+                                    <input type="text" class="finder__input-input" placeholder="Поиск товара">
+                                    <svg class="finder__input-icon">
+                                        <use xlink:href="#input-search"
+                                    </svg>
+                                </div>
+                            </div>
                             <svg class="icon finder__icon">
                                 <use xlink:href="#find"></use>
                             </svg>
-                        </div>
                     </div>
                     <a
                         class="contacts header__contacts"
@@ -164,7 +172,7 @@
                             <svg class="contacts__icon icon">
                                 <use xlink:href="#phone"
                             </svg>
-                            <div class="contacts__phone">+7 987 654-32-10</div>
+                            <h4 class="contacts__phone">+7 987 654-32-10</h4>
                             <div class="contacts__work-time">
                                 Ежедневно с 09:20 - 20:00
                             </div>
@@ -484,10 +492,10 @@
                 commodi magni tempore. Magni illum neque id fuga temporibus modi
                 officia. Dolorum repellat nesciunt ducimus doloremque modi.
             </div>
-        </div>
-        <div class="modal">
-            <div class="modal__close"></div>
-            <div class="modal__main"></div>
+            <div class="modal">
+                <div class="modal__close"></div>
+                <div class="modal__main"></div>
+            </div>
         </div>
     </body>
 </html>

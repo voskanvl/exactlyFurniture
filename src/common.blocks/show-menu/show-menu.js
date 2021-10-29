@@ -12,10 +12,10 @@ const showAndStopScroll = (showElement, toggleClass) => () => {
   showElement.classList.toggle(toggleClass);
 };
 
-showMenu.addEventListener('click', showAndStopScroll(menu, 'header__menu_hide'));
+showMenu.addEventListener('click', showAndStopScroll(menu, 'header__menu-hide'));
 
 closeMenu.addEventListener('click', () => {
-  menu.classList.add('header__menu_hide');
+  menu.classList.add('header__menu-hide');
   document.body.style.overflow = 'visible';
 });
 

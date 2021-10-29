@@ -9,7 +9,10 @@
     <body>
         <svg xmlns="http://www.w3.org/2000/svg" display="none">
             <symbol id="input-search" viewBox="0 0 18 18">
-                    <path d="M12.5674 11H11.7794L11.5002 10.73C12.4776 9.59 13.066 8.11 13.066 6.5C13.066 2.91 10.1637 0 6.58325 0C3.00276 0 0.100464 2.91 0.100464 6.5C0.100464 10.09 3.00276 13 6.58325 13C8.18898 13 9.66506 12.41 10.802 11.43L11.0713 11.71V12.5L16.0581 17.49L17.5441 16L12.5674 11ZM6.58325 11C4.09984 11 2.09517 8.99 2.09517 6.5C2.09517 4.01 4.09984 2 6.58325 2C9.06665 2 11.0713 4.01 11.0713 6.5C11.0713 8.99 9.06665 11 6.58325 11Z" fill="#A0A0A0"/>
+                <path
+                    d="M12.5674 11H11.7794L11.5002 10.73C12.4776 9.59 13.066 8.11 13.066 6.5C13.066 2.91 10.1637 0 6.58325 0C3.00276 0 0.100464 2.91 0.100464 6.5C0.100464 10.09 3.00276 13 6.58325 13C8.18898 13 9.66506 12.41 10.802 11.43L11.0713 11.71V12.5L16.0581 17.49L17.5441 16L12.5674 11ZM6.58325 11C4.09984 11 2.09517 8.99 2.09517 6.5C2.09517 4.01 4.09984 2 6.58325 2C9.06665 2 11.0713 4.01 11.0713 6.5C11.0713 8.99 9.06665 11 6.58325 11Z"
+                    fill="#A0A0A0"
+                />
             </symbol>
             <symbol id="filter" viewBox="0 0 16 16">
                 <path
@@ -152,17 +155,21 @@
                         </svg>
                     </div>
                     <div class="finder">
-                            <div class="finder__input">
-                                <div class="finder__input-container">
-                                    <input type="text" class="finder__input-input" placeholder="Поиск товара">
-                                    <svg class="finder__input-icon">
-                                        <use xlink:href="#input-search"
-                                    </svg>
-                                </div>
+                        <div class="finder__input">
+                            <div class="finder__input-container">
+                                <input
+                                    type="text"
+                                    class="finder__input-input"
+                                    placeholder="Поиск товара"
+                                />
+                                <svg class="finder__input-icon">
+                                    <use xlink:href="#input-search"
+                                </svg>
                             </div>
-                            <svg class="icon finder__icon">
-                                <use xlink:href="#find"></use>
-                            </svg>
+                        </div>
+                        <svg class="icon finder__icon">
+                            <use xlink:href="#find"></use>
+                        </svg>
                     </div>
                     <a
                         class="contacts header__contacts"
@@ -182,7 +189,9 @@
                 <nav class="menu header__menu header__menu-hide">
                     <div class="menu__wrap">
                         <div class="menu__header">
-                            <div class="menu__close">x</div>
+                            <svg class="menu__close">
+                                <use xlink:href="#close"></use>
+                            </svg>
                             <div class="logo menu__logo">
                                 <svg class="menu__img">
                                     <use xlink:href="#logo-black"></use>
@@ -500,8 +509,8 @@
                         <svg class="modal__close">
                             <use xlink:href="#close"></use>
                         </svg>
-                    </div>  
-                    <div class="modal__content"></div>  
+                    </div>
+                    <div class="modal__content"></div>
                 </div>
             </div>
         </div>

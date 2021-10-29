@@ -3,13 +3,19 @@
     position: relative;
     margin: 8px 0;
     width: fit-content;
-    color:#fff;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 6px 12px;
-    background-color: @color-test;
+    background-color: #359c31;
     border-radius: 4px;
+    &:hover {
+        background-color: #4eb84a;
+    }
+    &:active {
+        background-color: #6dd76a;
+    }
     &::before {
         box-shadow: 0 4px 8px rgba(50, 50, 71, 0.06);
         mix-blend-mode: multiply;

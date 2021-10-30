@@ -1,0 +1,12 @@
+@import (reference) "../../less/variables.less";
+.modal__main {
+    width: 272px;
+    background-color: #fff;
+    margin-top: 5px;
+    position: absolute;
+    right: -200%;
+    transition: right @cubic500;
+    &-show {
+        right: 0;
+    }
+}

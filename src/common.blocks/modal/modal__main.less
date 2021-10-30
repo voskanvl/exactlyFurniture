@@ -2,11 +2,16 @@
 .modal__main {
     width: 272px;
     background-color: #fff;
-    margin-top: 5px;
+    overflow-y: scroll;
+    top: 5px;
+    bottom: 5px;
     position: absolute;
+    display: flex;
+    flex-direction: column;
     right: -200%;
     transition: right @cubic500;
     &-show {
         right: 0;
     }
+
 }

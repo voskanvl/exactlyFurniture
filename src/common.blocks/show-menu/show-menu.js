@@ -20,3 +20,4 @@ closeMenu.addEventListener('click', () => {
 });
 
 export default showAndStopScroll;
+

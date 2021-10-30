@@ -1,18 +1,20 @@
 @import "../../less/variables.less";
-.menu__submenu-item{
+.menu__submenu-item {
+    position: relative;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 12px;
     place-items: center start;
     padding: 10px 0;
-    @media (min-width:768px){
+    @media (min-width: 768px) {
         flex: 1 1;
         padding: 1rem !important;
         grid-template-columns: unset;
         grid-template-rows: 2fr 1fr;
         place-items: center center;
         grid-gap: 0.5rem;
-        &:hover{
+        transition: background-color @cubic500;
+        &:hover {
             background-color: @color-test;
         }
     }

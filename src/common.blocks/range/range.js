@@ -3,7 +3,7 @@ const max = document.querySelector('input[name="max-value"]');
 const indicatorFrom = document.querySelector('.indicator-from');
 const indicatorTo = document.querySelector('.indicator-to');
 
-const BETWEEN_THUMBS = 10;
+const BETWEEN_THUMBS = 11;
 
 indicatorFrom.value = min.value;
 indicatorTo.value = max.value;

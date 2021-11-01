@@ -166,10 +166,10 @@
                         </div>
                         <div class="finder">
                             <div class="finder__input">
-                                <div class="finder__input-container">
+                                <div class="finder__input-container input__container">
                                     <input
                                         type="text"
-                                        class="finder__input-input"
+                                        class="finder__input-input input-input"
                                         placeholder="Поиск товара"
                                     />
                                     <svg class="finder__input-icon">
@@ -412,37 +412,81 @@
                 
                 <div class="content__wrap">
                     <aside class="aside">
-                        <div class="modal__content">
-                            Commodo fugiat est amet quis non amet officia eu et
-                            minim voluptate labore irure esse. Enim minim
-                            commodo fugiat fugiat est commodo duis qui. Laboris
-                            laborum culpa sint pariatur aliqua ex dolore. Ex
-                            duis veniam sunt irure eiusmod reprehenderit
-                            pariatur elit ipsum officia incididunt. Nisi ullamco
-                            aute nulla veniam elit mollit tempor. Dolore mollit
-                            magna nisi reprehenderit esse mollit in quis sunt
-                            minim occaecat ipsum. Duis elit cupidatat sint
-                            aliquip eu qui aute esse sit nulla ut. Nisi enim
-                            proident eiusmod laborum laboris. Non cillum ex
-                            excepteur incididunt deserunt excepteur do
-                            reprehenderit mollit aliquip velit. Laborum aliqua
-                            cupidatat sunt magna proident excepteur non culpa
-                            laborum. Culpa in consequat culpa amet eiusmod
-                            officia. Exercitation qui in labore proident eu sit
-                            magna qui eu anim fugiat laborum enim. Dolore labore
-                            aliqua sunt sunt velit excepteur. Sint amet officia
-                            anim velit qui laborum duis. Cillum proident et
-                            dolore labore exercitation aliqua tempor proident
-                            incididunt. Elit ex eu occaecat velit ex
-                            adipisicing. Aliquip nisi ad culpa laborum laborum
-                            qui ex est dolore et cupidatat. Cupidatat elit anim
-                            nisi dolore fugiat nisi culpa eu eiusmod esse duis.
-                            Dolor velit qui excepteur cillum sit esse
-                            adipisicing minim ad dolor. Veniam veniam nisi
-                            mollit do dolor reprehenderit Lorem reprehenderit ad
-                            in ullamco occaecat est. Fugiat consectetur magna
-                            nisi commodo tempor labore veniam.
-                        </div>
+                        <div class="modal">
+                            <div class="modal__main">
+                                <div class="modal__header">
+                                    <nav class="modal__back">
+                                        <svg class="icon">
+                                            <use xlink:href="#arrow-left"></use>
+                                        </svg>
+                                    </nav>
+                                    <div class="modal__title">Мягкая мебель</div>
+                                    <svg class="modal__close close">
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </div>
+                                <div class="modal__content">
+                                    <div class="range">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                              <div id="slider-range"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row slider-labels">
+                                            <div class="col-xs-6 caption">
+                                              <strong>Min:</strong> <span id="slider-range-value1"></span>
+                                            </div>
+                                            <div class="col-xs-6 text-right caption">
+                                              <strong>Max:</strong> <span id="slider-range-value2"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                              <form class="range">
+                                                <input type="range" name="min-value" value="30" max="100" min="0">
+                                                <input type="range" name="max-value" value="70" max="100" min="0">
+                                                <div class="track"></div>
+                                                <div class="range__monitor">
+                                                    <input type="text" class="range__indacator indicator-from">
+                                                    <input type="text" class="range__indacator indicator-to">
+                                                </div>
+                                              </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    Commodo fugiat est amet quis non amet officia eu et
+                                    minim voluptate labore irure esse. Enim minim
+                                    commodo fugiat fugiat est commodo duis qui. Laboris
+                                    laborum culpa sint pariatur aliqua ex dolore. Ex
+                                    duis veniam sunt irure eiusmod reprehenderit
+                                    pariatur elit ipsum officia incididunt. Nisi ullamco
+                                    aute nulla veniam elit mollit tempor. Dolore mollit
+                                    magna nisi reprehenderit esse mollit in quis sunt
+                                    minim occaecat ipsum. Duis elit cupidatat sint
+                                    aliquip eu qui aute esse sit nulla ut. Nisi enim
+                                    proident eiusmod laborum laboris. Non cillum ex
+                                    excepteur incididunt deserunt excepteur do
+                                    reprehenderit mollit aliquip velit. Laborum aliqua
+                                    cupidatat sunt magna proident excepteur non culpa
+                                    laborum. Culpa in consequat culpa amet eiusmod
+                                    officia. Exercitation qui in labore proident eu sit
+                                    magna qui eu anim fugiat laborum enim. Dolore labore
+                                    aliqua sunt sunt velit excepteur. Sint amet officia
+                                    anim velit qui laborum duis. Cillum proident et
+                                    dolore labore exercitation aliqua tempor proident
+                                    incididunt. Elit ex eu occaecat velit ex
+                                    adipisicing. Aliquip nisi ad culpa laborum laborum
+                                    qui ex est dolore et cupidatat. Cupidatat elit anim
+                                    nisi dolore fugiat nisi culpa eu eiusmod esse duis.
+                                    Dolor velit qui excepteur cillum sit esse
+                                    adipisicing minim ad dolor. Veniam veniam nisi
+                                    mollit do dolor reprehenderit Lorem reprehenderit ad
+                                    in ullamco occaecat est. Fugiat consectetur magna
+                                    nisi commodo tempor labore veniam.
+                                </div>
+                            </div>
+                            
+                    </div>
                     </aside>
                     <main class="main">
                         <ul class="main__catalog">
@@ -650,22 +694,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal">
-                    <div class="modal__main">
-                        <div class="modal__header">
-                            <nav class="modal__back">
-                                <svg class="icon">
-                                    <use xlink:href="#arrow-left"></use>
-                                </svg>
-                            </nav>
-                            <div class="modal__title">Мягкая мебель</div>
-                            <svg class="modal__close close">
-                                <use xlink:href="#close"></use>
-                            </svg>
-                        </div>
-                        
-                    </div>
-                </div>
+                
                 <footer class="footer">
                     <ul class="footer__content">
                         <li class="footer__item">
@@ -722,6 +751,10 @@
                                         ></use>
                                     </svg>
                                 </a>
+                                <div class="footer__adress">Россия, г. Рузаевка, ул. Карла Маркса, 16-г,</div>
+                                <a href="#" class="footer__privacy privacy">Политика конфиденциальности</a>
+                                <div class="footer__name">Точно Мебель — магазин мебели, 2020</div>
+                                <div class="footer__maker">Сделано в < href="">OnlineBees</a>OnlineBees</div>
                             </div>
                         </div>
                 </footer>

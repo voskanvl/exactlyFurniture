@@ -1,0 +1,75 @@
+@import (reference) "../../less/variables.less";
+.radio {
+	background: #359C31;
+	border-radius: 50px;
+	padding: 10px 7px;
+	color: #626262;
+	font-weight: bold;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17.5px;
+	width: 35px;
+	position: relative;
+	transition: all @cubic500;
+	margin-bottom: 20px;
+
+	&.off {
+		background: #359C31;
+		.bar {
+		    left: 50%;
+		}
+	}
+
+	.wrap {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 50px;
+		overflow: hidden;
+		position: relative;
+		height: 40px;
+	}
+
+	input {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	label {
+		position: relative;
+		z-index: 1;
+		cursor: pointer;
+		transition: all .5s ease-in-out;
+		user-select: none;
+        width: 12px;
+        height: 12px;
+	}
+
+	#on {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	#off {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.bar {
+		position: absolute;
+		left: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+		background: #fff;
+		height: 10px;
+		width: 10px;
+		border-radius: 50px;
+		transition: all @cubic500;
+	}
+}

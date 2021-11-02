@@ -166,7 +166,9 @@
                         </div>
                         <div class="finder">
                             <div class="finder__input">
-                                <div class="finder__input-container input__container">
+                                <div
+                                    class="finder__input-container input__container"
+                                >
                                     <input
                                         type="text"
                                         class="finder__input-input input-input"
@@ -366,50 +368,6 @@
                 </div>
             </header>
             <div class="content">
-                <div class="tags">
-                    <ul class="tags__list">
-                        <li class="tag tags__item">
-                            <div class="tag__title">Материалы: Eco Foam</div>
-                            <button class="tag__close">
-                                <svg class="tag__close-icon close">
-                                    <use xlink:href="#close"></use>
-                                </svg>
-                            </button>
-                        </li>
-                        <li class="tag tags__item">
-                            <div class="tag__title">Цвет: Бирюзовый</div>
-                            <button class="tag__close">
-                                <svg class="tag__close-icon close">
-                                    <use xlink:href="#close"></use>
-                                </svg>
-                            </button>
-                        </li>
-                        <li class="tag tags__item">
-                            <div class="tag__title">
-                                Длина, см: от 400 до 2000
-                            </div>
-                            <button class="tag__close">
-                                <svg class="tag__close-icon close">
-                                    <use xlink:href="#close"></use>
-                                </svg>
-                            </button>
-                        </li>
-                        <li class="tags__item">
-                            <button class="tags__clear clear">Очистить все</button>
-                        </li>
-                        <li class="tags__item">
-                            <button class="filter">
-                                <span class="filter__button">
-                                    <svg class="filter__icon">
-                                        <use xlink:href="#filter"></use>
-                                    </svg>
-                                </span>
-                                <div class="filter__title">Фильтр</div>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                
                 <div class="content__wrap">
                     <aside class="aside">
                         <div class="modal">
@@ -420,432 +378,914 @@
                                             <use xlink:href="#arrow-left"></use>
                                         </svg>
                                     </nav>
-                                    <div class="modal__title">Мягкая мебель</div>
+                                    <div class="modal__title">
+                                        Мягкая мебель
+                                    </div>
                                     <svg class="modal__close close">
                                         <use xlink:href="#close"></use>
                                     </svg>
                                 </div>
                                 <div class="modal__content">
-                                        <section class="category">
-                                            <div class="category__title aside__title">Категория</div>
-                                            <ul class="category__list">
-                                                <li class="category__item" selected><a href="#" class="category__item-ref">Мягкая мебель</a></li>
-                                                <li class="category__item"><a href="#" class="category__item-ref">Кресла-мешки</a></li>
-                                                <li class="category__item"><a href="#" class="category__item-ref">Компьютерные кресла</a></li>
-                                                <li class="category__item"><a href="#" class="category__item-ref">Кресла</a></li>
-                                                <li class="category__item"><a href="#" class="category__item-ref">Пуфики и банкетки</a></li>
-                                                <li class="category__item"><a href="#" class="category__item-ref">Кровати и матрасы</a></li>
-                                                <li class="category__item"><a href="#" class="category__item-ref">Диваны</a></li>
-                                                <li class="category__item"><a href="#" class="category__item-ref">Комплекты мягкой мебели</a></li>
-                                            </ul>
-                                        </section>
-                                        <section class="cost">
-                                            <div class="range">
-                                                    <div class="range__title aside__title">Цена</div>
-                                                  <form class="range">
-                                                    <input type="range" name="min-value" value="30" max="100" min="0">
-                                                    <input type="range" name="max-value" value="70" max="100" min="0">
-                                                    <div class="track"></div>
-                                                    <div class="range__monitor">
-                                                        <div class="range__indicator"><span class="range__indicator-prefix">от</span><input type="text" class="indicator-from"></div>
-                                                        <p>-</p>
-                                                        <div class="range__indicator"><span class="range__indicator-prefix">до</span><input type="text" class="indicator-to"></div>
+                                    <section class="category">
+                                        <div
+                                            class="category__title aside__title"
+                                        >
+                                            Категория
+                                        </div>
+                                        <ul class="category__list">
+                                            <li class="category__item" selected>
+                                                <a
+                                                    href="#"
+                                                    class="category__item-ref"
+                                                    >Мягкая мебель</a
+                                                >
+                                            </li>
+                                            <li class="category__item">
+                                                <a
+                                                    href="#"
+                                                    class="category__item-ref"
+                                                    >Кресла-мешки</a
+                                                >
+                                            </li>
+                                            <li class="category__item">
+                                                <a
+                                                    href="#"
+                                                    class="category__item-ref"
+                                                    >Компьютерные кресла</a
+                                                >
+                                            </li>
+                                            <li class="category__item">
+                                                <a
+                                                    href="#"
+                                                    class="category__item-ref"
+                                                    >Кресла</a
+                                                >
+                                            </li>
+                                            <li class="category__item">
+                                                <a
+                                                    href="#"
+                                                    class="category__item-ref"
+                                                    >Пуфики и банкетки</a
+                                                >
+                                            </li>
+                                            <li class="category__item">
+                                                <a
+                                                    href="#"
+                                                    class="category__item-ref"
+                                                    >Кровати и матрасы</a
+                                                >
+                                            </li>
+                                            <li class="category__item">
+                                                <a
+                                                    href="#"
+                                                    class="category__item-ref"
+                                                    >Диваны</a
+                                                >
+                                            </li>
+                                            <li class="category__item">
+                                                <a
+                                                    href="#"
+                                                    class="category__item-ref"
+                                                    >Комплекты мягкой мебели</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <section class="cost">
+                                        <div class="range">
+                                            <div
+                                                class="range__title aside__title"
+                                            >
+                                                Цена
+                                            </div>
+                                            <form class="range">
+                                                <input
+                                                    type="range"
+                                                    name="min-value"
+                                                    value="30"
+                                                    max="100"
+                                                    min="0"
+                                                />
+                                                <input
+                                                    type="range"
+                                                    name="max-value"
+                                                    value="70"
+                                                    max="100"
+                                                    min="0"
+                                                />
+                                                <div class="track"></div>
+                                                <div class="range__monitor">
+                                                    <div
+                                                        class="range__indicator"
+                                                    >
+                                                        <span
+                                                            class="range__indicator-prefix"
+                                                            >от</span
+                                                        ><input
+                                                            type="text"
+                                                            class="indicator-from"
+                                                        />
                                                     </div>
-                                                  </form>
+                                                    <p>-</p>
+                                                    <div
+                                                        class="range__indicator"
+                                                    >
+                                                        <span
+                                                            class="range__indicator-prefix"
+                                                            >до</span
+                                                        ><input
+                                                            type="text"
+                                                            class="indicator-to"
+                                                        />
+                                                    </div>
                                                 </div>
-                                        </section>
-                                              <section class="discount">
-                                                <div class="discount__title aside__title">Товары со скидкой</div>
-                                                <form class="switcher">
-                                                    <div class="radio">
-                                                        <div class="wrap">
-                                                            <input type="radio" id="on" name="radio">
-                                                            <label for="on"></label>
-                                                            <input type="radio" id="off" name="radio">
-                                                            <label for="off"></label>
-                                                            <div class="bar"></div>
-                                                        </div>
-                                                    </div>
-                                                  </form>
-                                              </section>
-                                              <selection class="materials">
-                                                <div class="materials__title aside__title">Материалы</div>
-                                              <ul class="materials__list">
-                                                  <li class="materials__item">
-                                                    <div class="checkbox">
-                                                        <div class="checkbox__control">
-                                                          <input type="checkbox" value="None" id="squaredFour" name="check" />
-                                                          <label for="squaredFour"></label>
-                                                        </div>
-                                                        <div class="checkbox__title">ABS пластик</div>
-                                                  </div>
-                                                  </li>
-                                                  <li class="materials__item">
-                                                    <div class="checkbox">
-                                                        <div class="checkbox__control">
-                                                          <input type="checkbox" value="None" id="s0" name="check" checked />
-                                                          <label for="s0"></label>
-                                                        </div>
-                                                        <div class="checkbox__title">Eco Foam</div>
-                                                  </div>
-                                                  </li>
-                                                  <li class="materials__item">
-                                                    <div class="checkbox">
-                                                        <div class="checkbox__control">
-                                                          <input type="checkbox" value="None" id="s1" name="check" checked />
-                                                          <label for="s1"></label>
-                                                        </div>
-                                                        <div class="checkbox__title">PLA пластик</div>
-                                                  </div>
-                                                  </li>
-                                                  <li class="materials__item">
-                                                    <div class="checkbox" disabled>
-                                                        <div class="checkbox__control">
-                                                          <input type="checkbox" value="None" id="s2" name="check" disabled/>
-                                                          <label for="s2"></label>
-                                                        </div>
-                                                        <div class="checkbox__title">Акрил</div>
-                                                  </div>
-                                                  </li>
-                                                  <li class="materials__item">
-                                                    <div class="checkbox" disabled>
-                                                        <div class="checkbox__control">
-                                                          <input type="checkbox" value="None" id="s3" name="check" disabled />
-                                                          <label for="s3"></label>
-                                                        </div>
-                                                        <div class="checkbox__title">Алюминиевый сплав</div>
-                                                  </div>
-                                                  </li>
-                                                  <li class="materials__item">
-                                                    <div class="checkbox" disabled>
-                                                        <div class="checkbox__control">
-                                                          <input type="checkbox" value="None" id="s4" name="check" disabled />
-                                                          <label for="s4"></label>
-                                                        </div>
-                                                        <div class="checkbox__title">Алюминий</div>
-                                                  </div>
-                                                  </li>
-                                                  <li class="materials__item">
-                                                    <div class="checkbox" disabled>
-                                                        <div class="checkbox__control">
-                                                          <input type="checkbox" value="None" id="s5" name="check" disabled />
-                                                          <label for="s5"></label>
-                                                        </div>
-                                                        <div class="checkbox__title">Бамбук</div>
-                                                  </div>
-                                                  </li>
-                                              </ul>
-                                              <button class="materials__clear clear">Показать все</button>
-                                              </selection>
-                                              <section class="height">
-                                                <div class="height range">
-                                                    <div class="range__title aside__title">Высота, см</div>
-                                                  <form class="range">
-                                                    <input type="range" name="min-value" value="1" max="240" min="0">
-                                                    <input type="range" name="max-value" value="240" max="240" min="0">
-                                                    <div class="track"></div>
-                                                    <div class="range__monitor">
-                                                        <div class="range__indicator"><span class="range__indicator-prefix">от</span><input type="text" class="indicator-from"></div>
-                                                        <p>-</p>
-                                                        <div class="range__indicator"><span class="range__indicator-prefix">до</span><input type="text" class="indicator-to"></div>
-                                                    </div>
-                                                  </form>
+                                            </form>
+                                        </div>
+                                    </section>
+                                    <section class="discount">
+                                        <div
+                                            class="discount__title aside__title"
+                                        >
+                                            Товары со скидкой
+                                        </div>
+                                        <form class="switcher">
+                                            <div class="radio">
+                                                <div class="wrap">
+                                                    <input
+                                                        type="radio"
+                                                        id="on"
+                                                        name="radio"
+                                                    />
+                                                    <label for="on"></label>
+                                                    <input
+                                                        type="radio"
+                                                        id="off"
+                                                        name="radio"
+                                                    />
+                                                    <label for="off"></label>
+                                                    <div class="bar"></div>
                                                 </div>
-                                              </section>
-                                              <section class="length">
-                                                <div class="length range">
-                                                    <div class="range__title aside__title">Длина, см</div>
-                                                  <form class="range">
-                                                    <input type="range" name="min-value" value="400" max="2000" min="0">
-                                                    <input type="range" name="max-value" value="2000" max="2000" min="0">
-                                                    <div class="track"></div>
-                                                    <div class="range__monitor">
-                                                        <div class="range__indicator"><span class="range__indicator-prefix">от</span><input type="text" class="indicator-from"></div>
-                                                        <p>-</p>
-                                                        <div class="range__indicator"><span class="range__indicator-prefix">до</span><input type="text" class="indicator-to"></div>
+                                            </div>
+                                        </form>
+                                    </section>
+                                    <selection class="materials">
+                                        <div
+                                            class="materials__title aside__title"
+                                        >
+                                            Материалы
+                                        </div>
+                                        <ul class="materials__list">
+                                            <li class="materials__item">
+                                                <div class="checkbox">
+                                                    <div
+                                                        class="checkbox__control"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            value="None"
+                                                            id="squaredFour"
+                                                            name="check"
+                                                        />
+                                                        <label
+                                                            for="squaredFour"
+                                                        ></label>
                                                     </div>
-                                                  </form>
+                                                    <div
+                                                        class="checkbox__title"
+                                                    >
+                                                        ABS пластик
+                                                    </div>
                                                 </div>
-                                              </section>
-                                    </div>
-                                    
+                                            </li>
+                                            <li class="materials__item">
+                                                <div class="checkbox">
+                                                    <div
+                                                        class="checkbox__control"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            value="None"
+                                                            id="s0"
+                                                            name="check"
+                                                            checked
+                                                        />
+                                                        <label for="s0"></label>
+                                                    </div>
+                                                    <div
+                                                        class="checkbox__title"
+                                                    >
+                                                        Eco Foam
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="materials__item">
+                                                <div class="checkbox">
+                                                    <div
+                                                        class="checkbox__control"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            value="None"
+                                                            id="s1"
+                                                            name="check"
+                                                            checked
+                                                        />
+                                                        <label for="s1"></label>
+                                                    </div>
+                                                    <div
+                                                        class="checkbox__title"
+                                                    >
+                                                        PLA пластик
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="materials__item">
+                                                <div class="checkbox" disabled>
+                                                    <div
+                                                        class="checkbox__control"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            value="None"
+                                                            id="s2"
+                                                            name="check"
+                                                            disabled
+                                                        />
+                                                        <label for="s2"></label>
+                                                    </div>
+                                                    <div
+                                                        class="checkbox__title"
+                                                    >
+                                                        Акрил
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="materials__item">
+                                                <div class="checkbox" disabled>
+                                                    <div
+                                                        class="checkbox__control"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            value="None"
+                                                            id="s3"
+                                                            name="check"
+                                                            disabled
+                                                        />
+                                                        <label for="s3"></label>
+                                                    </div>
+                                                    <div
+                                                        class="checkbox__title"
+                                                    >
+                                                        Алюминиевый сплав
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="materials__item">
+                                                <div class="checkbox" disabled>
+                                                    <div
+                                                        class="checkbox__control"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            value="None"
+                                                            id="s4"
+                                                            name="check"
+                                                            disabled
+                                                        />
+                                                        <label for="s4"></label>
+                                                    </div>
+                                                    <div
+                                                        class="checkbox__title"
+                                                    >
+                                                        Алюминий
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="materials__item">
+                                                <div class="checkbox" disabled>
+                                                    <div
+                                                        class="checkbox__control"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            value="None"
+                                                            id="s5"
+                                                            name="check"
+                                                            disabled
+                                                        />
+                                                        <label for="s5"></label>
+                                                    </div>
+                                                    <div
+                                                        class="checkbox__title"
+                                                    >
+                                                        Бамбук
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <button class="materials__clear clear">
+                                            Показать все
+                                        </button>
+                                    </selection>
+                                    <section class="height">
+                                        <div class="height range">
+                                            <div
+                                                class="range__title aside__title"
+                                            >
+                                                Высота, см
+                                            </div>
+                                            <form class="range">
+                                                <input
+                                                    type="range"
+                                                    name="min-value"
+                                                    value="1"
+                                                    max="240"
+                                                    min="0"
+                                                />
+                                                <input
+                                                    type="range"
+                                                    name="max-value"
+                                                    value="240"
+                                                    max="240"
+                                                    min="0"
+                                                />
+                                                <div class="track"></div>
+                                                <div class="range__monitor">
+                                                    <div
+                                                        class="range__indicator"
+                                                    >
+                                                        <span
+                                                            class="range__indicator-prefix"
+                                                            >от</span
+                                                        ><input
+                                                            type="text"
+                                                            class="indicator-from"
+                                                        />
+                                                    </div>
+                                                    <p>-</p>
+                                                    <div
+                                                        class="range__indicator"
+                                                    >
+                                                        <span
+                                                            class="range__indicator-prefix"
+                                                            >до</span
+                                                        ><input
+                                                            type="text"
+                                                            class="indicator-to"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </section>
+                                    <section class="length">
+                                        <div class="length range">
+                                            <div
+                                                class="range__title aside__title"
+                                            >
+                                                Длина, см
+                                            </div>
+                                            <form class="range">
+                                                <input
+                                                    type="range"
+                                                    name="min-value"
+                                                    value="400"
+                                                    max="2000"
+                                                    min="0"
+                                                />
+                                                <input
+                                                    type="range"
+                                                    name="max-value"
+                                                    value="2000"
+                                                    max="2000"
+                                                    min="0"
+                                                />
+                                                <div class="track"></div>
+                                                <div class="range__monitor">
+                                                    <div
+                                                        class="range__indicator"
+                                                    >
+                                                        <span
+                                                            class="range__indicator-prefix"
+                                                            >от</span
+                                                        ><input
+                                                            type="text"
+                                                            class="indicator-from"
+                                                        />
+                                                    </div>
+                                                    <p>-</p>
+                                                    <div
+                                                        class="range__indicator"
+                                                    >
+                                                        <span
+                                                            class="range__indicator-prefix"
+                                                            >до</span
+                                                        ><input
+                                                            type="text"
+                                                            class="indicator-to"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </section>
                                 </div>
                             </div>
-                            
-                    </div>
+                        </div>
                     </aside>
-                    <main class="main">
+                    <div class="main">
+                        <div class="tags">
+                            <ul class="tags__list">
+                                <li class="tag tags__item">
+                                    <div class="tag__title">
+                                        Материалы: Eco Foam
+                                    </div>
+                                    <button class="tag__close">
+                                        <svg class="tag__close-icon close">
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="tag tags__item">
+                                    <div class="tag__title">
+                                        Цвет: Бирюзовый
+                                    </div>
+                                    <button class="tag__close">
+                                        <svg class="tag__close-icon close">
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="tag tags__item">
+                                    <div class="tag__title">
+                                        Длина, см: от 400 до 2000
+                                    </div>
+                                    <button class="tag__close">
+                                        <svg class="tag__close-icon close">
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="tags__item">
+                                    <button class="tags__clear clear">
+                                        Очистить все
+                                    </button>
+                                </li>
+                                <li class="tags__item">
+                                    <button class="filter">
+                                        <span class="filter__button">
+                                            <svg class="filter__icon">
+                                                <use xlink:href="#filter"></use>
+                                            </svg>
+                                        </span>
+                                        <div class="filter__title">Фильтр</div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                         <ul class="main__catalog">
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle0.jpeg" alt="chair 0">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle0.jpeg"
+                                        alt="chair 0"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Диван-кровать Вилли Рогожка, розовый</div>
+                                    <div class="main__item-title">
+                                        Диван-кровать Вилли Рогожка, розовый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__cost main__item-current-cost">4234 ₽</div>
-                                        <div class="main__cost main__item-old-cost">21 000 ₽</div>
+                                        <div
+                                            class="main__cost main__item-current-cost"
+                                        >
+                                            4234 ₽
+                                        </div>
+                                        <div
+                                            class="main__cost main__item-old-cost"
+                                        >
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle2.jpeg" alt="chair 2">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle2.jpeg"
+                                        alt="chair 2"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</div>
+                                    <div class="main__item-title">
+                                        Диван-кровать Шарм-Дизайн
+                                        ЕвроШарм серый с беж
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">12 244 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            12 244 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle3.jpeg" alt="chair 3">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle3.jpeg"
+                                        alt="chair 3"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Шкаф Guocai CBME12035 Бежевый, бежевый, белый</div>
+                                    <div class="main__item-title">
+                                        Шкаф Guocai CBME12035 Бежевый, бежевый,
+                                        белый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">7 000 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            7 000 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle4.jpeg" alt="chair 4">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle4.jpeg"
+                                        alt="chair 4"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Шкаф Guocai CBME12035 Бежевый, бежевый, белый</div>
+                                    <div class="main__item-title">
+                                        Шкаф Guocai CBME12035 Бежевый, бежевый,
+                                        белый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">12 244 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            12 244 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle0.jpeg" alt="chair 0">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle0.jpeg"
+                                        alt="chair 0"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Диван-кровать Вилли Рогожка, розовый</div>
+                                    <div class="main__item-title">
+                                        Диван-кровать Вилли Рогожка, розовый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__cost main__item-current-cost">4234 ₽</div>
-                                        <div class="main__cost main__item-old-cost">21 000 ₽</div>
+                                        <div
+                                            class="main__cost main__item-current-cost"
+                                        >
+                                            4234 ₽
+                                        </div>
+                                        <div
+                                            class="main__cost main__item-old-cost"
+                                        >
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle2.jpeg" alt="chair 2">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle2.jpeg"
+                                        alt="chair 2"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</div>
+                                    <div class="main__item-title">
+                                        Диван-кровать Шарм-Дизайн
+                                        ЕвроШарм серый с беж
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">12 244 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            12 244 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle3.jpeg" alt="chair 3">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle3.jpeg"
+                                        alt="chair 3"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Шкаф Guocai CBME12035 Бежевый, бежевый, белый</div>
+                                    <div class="main__item-title">
+                                        Шкаф Guocai CBME12035 Бежевый, бежевый,
+                                        белый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">7 000 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            7 000 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle4.jpeg" alt="chair 4">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle4.jpeg"
+                                        alt="chair 4"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Шкаф Guocai CBME12035 Бежевый, бежевый, белый</div>
+                                    <div class="main__item-title">
+                                        Шкаф Guocai CBME12035 Бежевый, бежевый,
+                                        белый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">12 244 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            12 244 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle0.jpeg" alt="chair 0">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle0.jpeg"
+                                        alt="chair 0"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Диван-кровать Вилли Рогожка, розовый</div>
+                                    <div class="main__item-title">
+                                        Диван-кровать Вилли Рогожка, розовый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__cost main__item-current-cost">4234 ₽</div>
-                                        <div class="main__cost main__item-old-cost">21 000 ₽</div>
+                                        <div
+                                            class="main__cost main__item-current-cost"
+                                        >
+                                            4234 ₽
+                                        </div>
+                                        <div
+                                            class="main__cost main__item-old-cost"
+                                        >
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle2.jpeg" alt="chair 2">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle2.jpeg"
+                                        alt="chair 2"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</div>
+                                    <div class="main__item-title">
+                                        Диван-кровать Шарм-Дизайн
+                                        ЕвроШарм серый с беж
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">12 244 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            12 244 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle3.jpeg" alt="chair 3">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle3.jpeg"
+                                        alt="chair 3"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Шкаф Guocai CBME12035 Бежевый, бежевый, белый</div>
+                                    <div class="main__item-title">
+                                        Шкаф Guocai CBME12035 Бежевый, бежевый,
+                                        белый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">7 000 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            7 000 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle4.jpeg" alt="chair 4">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle4.jpeg"
+                                        alt="chair 4"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Шкаф Guocai CBME12035 Бежевый, бежевый, белый</div>
+                                    <div class="main__item-title">
+                                        Шкаф Guocai CBME12035 Бежевый, бежевый,
+                                        белый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">12 244 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            12 244 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle0.jpeg" alt="chair 0">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle0.jpeg"
+                                        alt="chair 0"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Диван-кровать Вилли Рогожка, розовый</div>
+                                    <div class="main__item-title">
+                                        Диван-кровать Вилли Рогожка, розовый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__cost main__item-current-cost">4234 ₽</div>
-                                        <div class="main__cost main__item-old-cost">21 000 ₽</div>
+                                        <div
+                                            class="main__cost main__item-current-cost"
+                                        >
+                                            4234 ₽
+                                        </div>
+                                        <div
+                                            class="main__cost main__item-old-cost"
+                                        >
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle2.jpeg" alt="chair 2">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle2.jpeg"
+                                        alt="chair 2"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Диван-кровать Шарм-Дизайн ЕвроШарм серый с беж</div>
+                                    <div class="main__item-title">
+                                        Диван-кровать Шарм-Дизайн
+                                        ЕвроШарм серый с беж
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">12 244 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            12 244 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle3.jpeg" alt="chair 3">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle3.jpeg"
+                                        alt="chair 3"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Шкаф Guocai CBME12035 Бежевый, бежевый, белый</div>
+                                    <div class="main__item-title">
+                                        Шкаф Guocai CBME12035 Бежевый, бежевый,
+                                        белый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">7 000 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            7 000 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img src="./assets/images/chairs/Rectangle4.jpeg" alt="chair 4">
+                                    <img
+                                        src="./assets/images/chairs/Rectangle4.jpeg"
+                                        alt="chair 4"
+                                    />
                                 </div>
                                 <div class="main__item-desc">
-                                    <div class="main__item-title">Шкаф Guocai CBME12035 Бежевый, бежевый, белый</div>
+                                    <div class="main__item-title">
+                                        Шкаф Guocai CBME12035 Бежевый, бежевый,
+                                        белый
+                                    </div>
                                     <div class="main__item-costs">
-                                        <div class="main__item-current-cost">12 244 ₽</div>
-                                        <div class="main__item-old-cost">21 000 ₽</div>
+                                        <div class="main__item-current-cost">
+                                            12 244 ₽
+                                        </div>
+                                        <div class="main__item-old-cost">
+                                            21 000 ₽
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                         </ul>
-                        <div class="main__footer">
+                        <main class="main__footer">
                             <div class="main__footer-title">Мягкая мебель</div>
                             <div class="main__footer-desc">
-                                Наша компания организует оптовые поставки любой сложности. Мы изготовим и доставим заказ согласно вашему требованию и предподчениям. 
-Мы несём полную ответственнсть за качество и сроки поставки. Опираясь на наш опыт ,мы можем организовать сделку любой сложности.  Мы стремимся удовлетворить спрос самого взыскательного покупателя, поэтому модельный ряд нашей продукции ежегодно пополняется новыми моделями.
-Благодаря передовым технологиям и оригинальным дизайнерским решениям мы стали признанным лидером в производстве корпусной мебели для дома и офиса.
-Наша компания регулярно участвует в мебельных выставках.
+                                Наша компания организует оптовые поставки любой
+                                сложности. Мы изготовим и доставим заказ
+                                согласно вашему требованию и предподчениям. Мы
+                                несём полную ответственнсть за качество и сроки
+                                поставки. Опираясь на наш опыт ,мы можем
+                                организовать сделку любой сложности. Мы
+                                стремимся удовлетворить спрос самого
+                                взыскательного покупателя, поэтому модельный ряд
+                                нашей продукции ежегодно пополняется новыми
+                                моделями. Благодаря передовым технологиям и
+                                оригинальным дизайнерским решениям мы стали
+                                признанным лидером в производстве корпусной
+                                мебели для дома и офиса. Наша компания регулярно
+                                участвует в мебельных выставках.
                             </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <ul class="footer__content">
+                    <li class="footer__item">
+                        <a href="#" class="menu__item-title"
+                            >Выставочные залы</a
+                        >
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="menu__item-title">О нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="menu__item-title">Новости</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="menu__item-title">Отзывы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="menu__item-title">Контакты</a>
+                    </li>
+                </ul>
+                <div class="contacts menu__contacts">
+                    <div class="menu__contacts-wrap">
+                        <svg class="menu__contacts-icon icon menu__item-icon">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <a href="tel:+79876543210" class="menu__phone"
+                            >+7 987 654-32-10</a
+                        >
+                        <div class="menu__work-time">
+                            Ежедневно с 09:20 - 20:00
+                        </div>
+                        <a class="menu__mail">
+                            example@example.com
+                        </a>
+                        <a href="#" class="menu__instagram-link">
+                            <svg class="menu__instagram-icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                        <div class="footer__adress">
+                            Россия, г. Рузаевка, ул. Карла Маркса, 16-г,
+                        </div>
+                        <a href="#" class="footer__privacy privacy"
+                            >Политика конфиденциальности</a
+                        >
+                        <div class="footer__name">
+                            Точно Мебель — магазин мебели, 2020
+                        </div>
+                        <div class="footer__maker">
+                            Сделано в <a href="#">OnlineBees</a>OnlineBees
                         </div>
                     </div>
                 </div>
-                
-                <footer class="footer">
-                    <ul class="footer__content">
-                        <li class="footer__item">
-                            <a href="#" class="menu__item-title"
-                                >Выставочные залы</a
-                            >
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="menu__item-title"
-                                >О нас</a
-                            >
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="menu__item-title"
-                                >Новости</a
-                            >
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="menu__item-title"
-                                >Отзывы</a
-                            >
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="menu__item-title"
-                                >Контакты</a
-                            >
-                        </li>
-                    </ul>
-                        <div class="contacts menu__contacts">
-                            <div class="menu__contacts-wrap">
-                                <svg
-                                    class="menu__contacts-icon icon menu__item-icon"
-                                >
-                                    <use xlink:href="#phone"></use>
-                                </svg>
-                                <a
-                                    href="tel:+79876543210"
-                                    class="menu__phone"
-                                    >+7 987 654-32-10</a
-                                >
-                                <div class="menu__work-time">
-                                    Ежедневно с 09:20 - 20:00
-                                </div>
-                                <a class="menu__mail">
-                                    example@example.com
-                                </a>
-                                <a
-                                    href="#"
-                                    class="menu__instagram-link"
-                                >
-                                    <svg class="menu__instagram-icon">
-                                        <use
-                                            xlink:href="#instagram"
-                                        ></use>
-                                    </svg>
-                                </a>
-                                <div class="footer__adress">Россия, г. Рузаевка, ул. Карла Маркса, 16-г,</div>
-                                <a href="#" class="footer__privacy privacy">Политика конфиденциальности</a>
-                                <div class="footer__name">Точно Мебель — магазин мебели, 2020</div>
-                                <div class="footer__maker">Сделано в <a href="#">OnlineBees</a>OnlineBees</div>
-                            </div>
-                        </div>
-                </footer>
-            </div>
-            
+            </footer>
         </div>
     </body>
 </html>

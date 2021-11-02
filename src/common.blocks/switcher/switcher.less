@@ -1,6 +1,6 @@
 @import (reference) "../../less/variables.less";
 .radio {
-	background: #359C31;
+	background: @accent;
 	border-radius: 50px;
 	padding: 10px 7px;
 	color: #626262;
@@ -13,13 +13,16 @@
 	position: relative;
 	transition: all @cubic500;
 	margin-bottom: 20px;
-
+	&:hover{
+		background: @accent-hover;
+	}
 	&.off {
-		background: #359C31;
+		background: @gray4;
 		.bar {
 		    left: 50%;
 		}
 	}
+	
 
 	.wrap {
 		width: 100%;

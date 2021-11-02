@@ -20,3 +20,12 @@ max.addEventListener('input', (event) => {
   indicatorTo.value = value;
   indicatorFrom.value = min.value;
 });
+
+indicatorFrom.addEventListener('change', (event) => {
+  const { target: { value } } = event;
+  min.value = value;
+});
+indicatorTo.addEventListener('change', (event) => {
+  const { target: { value } } = event;
+  max.value = value;
+});

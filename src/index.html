@@ -395,7 +395,7 @@
                             </button>
                         </li>
                         <li class="tags__item">
-                            <button class="tags__clear">Очистить все</button>
+                            <button class="tags__clear clear">Очистить все</button>
                         </li>
                         <li class="tags__item">
                             <button class="filter">
@@ -439,19 +439,21 @@
                                                 <li class="category__item"><a href="#" class="category__item-ref">Комплекты мягкой мебели</a></li>
                                             </ul>
                                         </section>
-                                    <div class="range">
-                                                <div class="range__title aside__title">Цена</div>
-                                              <form class="range">
-                                                <input type="range" name="min-value" value="30" max="100" min="0">
-                                                <input type="range" name="max-value" value="70" max="100" min="0">
-                                                <div class="track"></div>
-                                                <div class="range__monitor">
-                                                    <div class="range__indicator"><span class="range__indicator-prefix">от</span><input type="text" class="indicator-from"></div>
-                                                    <p>-</p>
-                                                    <div class="range__indicator"><span class="range__indicator-prefix">до</span><input type="text" class="indicator-to"></div>
+                                        <section class="cost">
+                                            <div class="range">
+                                                    <div class="range__title aside__title">Цена</div>
+                                                  <form class="range">
+                                                    <input type="range" name="min-value" value="30" max="100" min="0">
+                                                    <input type="range" name="max-value" value="70" max="100" min="0">
+                                                    <div class="track"></div>
+                                                    <div class="range__monitor">
+                                                        <div class="range__indicator"><span class="range__indicator-prefix">от</span><input type="text" class="indicator-from"></div>
+                                                        <p>-</p>
+                                                        <div class="range__indicator"><span class="range__indicator-prefix">до</span><input type="text" class="indicator-to"></div>
+                                                    </div>
+                                                  </form>
                                                 </div>
-                                              </form>
-                                            </div>
+                                        </section>
                                               <section class="discount">
                                                 <div class="discount__title aside__title">Товары со скидкой</div>
                                                 <form class="switcher">
@@ -466,7 +468,9 @@
                                                     </div>
                                                   </form>
                                               </section>
-                                              <ul class="aside__materials">
+                                              <selection class="materials">
+                                                <div class="materials__title aside__title">Материалы</div>
+                                              <ul class="materials__list">
                                                   <li class="materials__item">
                                                     <div class="checkbox">
                                                         <div class="checkbox__control">
@@ -531,7 +535,38 @@
                                                   </div>
                                                   </li>
                                               </ul>
-                                              
+                                              <button class="materials__clear clear">Показать все</button>
+                                              </selection>
+                                              <section class="height">
+                                                <div class="height range">
+                                                    <div class="range__title aside__title">Высота, см</div>
+                                                  <form class="range">
+                                                    <input type="range" name="min-value" value="1" max="240" min="0">
+                                                    <input type="range" name="max-value" value="240" max="240" min="0">
+                                                    <div class="track"></div>
+                                                    <div class="range__monitor">
+                                                        <div class="range__indicator"><span class="range__indicator-prefix">от</span><input type="text" class="indicator-from"></div>
+                                                        <p>-</p>
+                                                        <div class="range__indicator"><span class="range__indicator-prefix">до</span><input type="text" class="indicator-to"></div>
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                              </section>
+                                              <section class="length">
+                                                <div class="length range">
+                                                    <div class="range__title aside__title">Длина, см</div>
+                                                  <form class="range">
+                                                    <input type="range" name="min-value" value="400" max="2000" min="0">
+                                                    <input type="range" name="max-value" value="2000" max="2000" min="0">
+                                                    <div class="track"></div>
+                                                    <div class="range__monitor">
+                                                        <div class="range__indicator"><span class="range__indicator-prefix">от</span><input type="text" class="indicator-from"></div>
+                                                        <p>-</p>
+                                                        <div class="range__indicator"><span class="range__indicator-prefix">до</span><input type="text" class="indicator-to"></div>
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                              </section>
                                     </div>
                                     
                                 </div>

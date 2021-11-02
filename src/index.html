@@ -426,34 +426,20 @@
                                     </svg>
                                 </div>
                                 <div class="modal__content">
-                                    <div class="select">
-                                        <select multiple name="list">
-                                            <optgroup label="Категория">
-                                              <option>Мягкая мебель</option>
-                                              <option>Кресла-мешки</option>
-                                              <option>Компьютерные кресла</option>
-                                              <option>Кресла</option>
-                                              <option>Пуфики и банкетки</option>
-                                              <option>Кровати и матрасы</option>
-                                              <option>Диваны</option>
-                                              <option>Комплекты мягкой мебели</option>
-                                            </optgroup>
-                                          </select>
-                                    </div>
+                                        <section class="category">
+                                            <div class="category__title">Категория</div>
+                                            <ul class="category__list">
+                                                <li class="category__item" selected><a href="#" class="category__item-ref">Мягкая мебель</a></li>
+                                                <li class="category__item"><a href="#" class="category__item-ref">Кресла-мешки</a></li>
+                                                <li class="category__item"><a href="#" class="category__item-ref">Компьютерные кресла</a></li>
+                                                <li class="category__item"><a href="#" class="category__item-ref">Кресла</a></li>
+                                                <li class="category__item"><a href="#" class="category__item-ref">Пуфики и банкетки</a></li>
+                                                <li class="category__item"><a href="#" class="category__item-ref">Кровати и матрасы</a></li>
+                                                <li class="category__item"><a href="#" class="category__item-ref">Диваны</a></li>
+                                                <li class="category__item"><a href="#" class="category__item-ref">Комплекты мягкой мебели</a></li>
+                                            </ul>
+                                        </section>
                                     <div class="range">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                              <div id="slider-range"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row slider-labels">
-                                            <div class="col-xs-6 caption">
-                                              <strong>Min:</strong> <span id="slider-range-value1"></span>
-                                            </div>
-                                            <div class="col-xs-6 text-right caption">
-                                              <strong>Max:</strong> <span id="slider-range-value2"></span>
-                                            </div>
-                                        </div>
                                               <form class="range">
                                                 <input type="range" name="min-value" value="30" max="100" min="0">
                                                 <input type="range" name="max-value" value="70" max="100" min="0">

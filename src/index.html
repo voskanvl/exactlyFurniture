@@ -427,7 +427,7 @@
                                 </div>
                                 <div class="modal__content">
                                         <section class="category">
-                                            <div class="category__title">Категория</div>
+                                            <div class="category__title aside__title">Категория</div>
                                             <ul class="category__list">
                                                 <li class="category__item" selected><a href="#" class="category__item-ref">Мягкая мебель</a></li>
                                                 <li class="category__item"><a href="#" class="category__item-ref">Кресла-мешки</a></li>
@@ -440,14 +440,15 @@
                                             </ul>
                                         </section>
                                     <div class="range">
+                                                <div class="range__title aside__title">Цена</div>
                                               <form class="range">
                                                 <input type="range" name="min-value" value="30" max="100" min="0">
                                                 <input type="range" name="max-value" value="70" max="100" min="0">
                                                 <div class="track"></div>
                                                 <div class="range__monitor">
-                                                    <input type="text" class="range__indicator indicator-from">
+                                                    <div class="range__indicator"><span class="range__indicator-prefix">от</span><input type="text" class="indicator-from"></div>
                                                     <p>-</p>
-                                                    <input type="text" class="range__indicator indicator-to">
+                                                    <div class="range__indicator"><span class="range__indicator-prefix">до</span><input type="text" class="indicator-to"></div>
                                                 </div>
                                               </form>
                                               <form class="switcher">

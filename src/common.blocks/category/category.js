@@ -1,7 +1,10 @@
 const categoryList = document.querySelector('.category__list');
 categoryList.addEventListener('click', (event) => {
   const selected = document.querySelector('.category__item[selected]');
-  selected.removeAttribute('selected');
   const selecteditem = event.target.closest('.category__item');
-  if (selecteditem.tagName === 'LI') selecteditem.setAttribute('selected', 'selected');
+  console.log('🚀 ~ selecteditem', selecteditem);
+  if (selecteditem != null && selecteditem.tagName === 'LI') {
+    selected.removeAttribute('selected');
+    selecteditem.setAttribute('selected', 'selected');
+  }
 });

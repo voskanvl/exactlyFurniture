@@ -1,31 +1,50 @@
-const min = document.querySelector('input[name="min-value"]');
-const max = document.querySelector('input[name="max-value"]');
-const indicatorFrom = document.querySelector('.indicator-from');
-const indicatorTo = document.querySelector('.indicator-to');
+const ranges = document.querySelectorAll('form.range');
+for (let i = 0; i < ranges.length; i++) {
+  const range = ranges[i];
 
-const BETWEEN_THUMBS = 11;
+  const min = range.querySelector('input[name="min-value"]');
+  const max = range.querySelector('input[name="max-value"]');
+  const indicatorFrom = range.querySelector('.indicator-from');
+  const indicatorTo = range.querySelector('.indicator-to');
 
-indicatorFrom.value = min.value;
-indicatorTo.value = max.value;
+  const BETWEEN_THUMBS = 11;
 
-min.addEventListener('input', (event) => {
-  const { target: { value } } = event;
-  max.value = (+value + BETWEEN_THUMBS > +max.value) ? +value + BETWEEN_THUMBS : max.value;
-  indicatorFrom.value = value;
-  indicatorTo.value = max.value;
-});
-max.addEventListener('input', (event) => {
-  const { target: { value } } = event;
-  min.value = (+value - BETWEEN_THUMBS < min.value) ? value - BETWEEN_THUMBS : min.value;
-  indicatorTo.value = value;
   indicatorFrom.value = min.value;
-});
+  indicatorTo.value = max.value;
 
-indicatorFrom.addEventListener('change', (event) => {
-  const { target: { value } } = event;
-  min.value = value;
-});
-indicatorTo.addEventListener('change', (event) => {
-  const { target: { value } } = event;
-  max.value = value;
-});
+  min.addEventListener('input', (event) => {
+    const {
+      target: { value },
+    } = event;
+    max.value =
+            +value + BETWEEN_THUMBS > +max.value
+              ? +value + BETWEEN_THUMBS
+              : max.value;
+    indicatorFrom.value = value;
+    indicatorTo.value = max.value;
+  });
+  max.addEventListener('input', (event) => {
+    const {
+      target: { value },
+    } = event;
+    min.value =
+            +value - BETWEEN_THUMBS < min.value
+              ? value - BETWEEN_THUMBS
+              : min.value;
+    indicatorTo.value = value;
+    indicatorFrom.value = min.value;
+  });
+
+  indicatorFrom.addEventListener('change', (event) => {
+    const {
+      target: { value },
+    } = event;
+    min.value = value;
+  });
+  indicatorTo.addEventListener('change', (event) => {
+    const {
+      target: { value },
+    } = event;
+    max.value = value;
+  });
+}

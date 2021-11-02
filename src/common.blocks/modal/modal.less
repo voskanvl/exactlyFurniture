@@ -7,8 +7,11 @@
     bottom: 0;
     background-color: #0004;
     z-index: 9;
-}
-
-.modal_show{
-    display: block;
+    &_show{
+        display: block;
+    }
+    @media (min-width:768px){
+        display: block;
+        position: static;
+    }
 }

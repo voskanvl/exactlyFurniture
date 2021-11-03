@@ -1,6 +1,8 @@
 @import (reference) "../../less/variables.less";
 .footer__wrap{
-    background-color: @normal-bg;
+    width: 100%;
+    max-width: 1200px;
+    
     color:@gray4;
     padding:48px 17px 32px 17px;
     @media (min-width:768px){
@@ -10,7 +12,5 @@
         grid-template-areas: "one two three four "
                              "last last last last";
         grid-gap: 0 68px;
-        padding-left: 120px;
-        padding-right: 120px;
     }
 }

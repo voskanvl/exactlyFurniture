@@ -3,6 +3,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 144px;
     padding: 8px;
+    &:hover{
+        box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.12), 0px 32px 40px rgba(50, 50, 71, 0.12);
+    }
+    @media (min-width:768px){
+        flex: 1 1 30%;
+    }
 }

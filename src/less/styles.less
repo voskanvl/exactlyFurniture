@@ -27,8 +27,11 @@ button {
 
 a {
     text-decoration: none;
-
     color: inherit;
+    transition: color @cubic500;
+    &:hover{
+        color: @accent;
+    }
 }
 * {
     box-sizing: border-box;

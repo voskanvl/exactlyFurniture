@@ -833,24 +833,26 @@
                                     </button>
                                 </li>
                                 <li class="tags__item">
-                                    <button class="filter">
-                                        <span class="filter__button">
-                                            <svg class="filter__icon">
-                                                <use xlink:href="#filter"></use>
-                                            </svg>
-                                        </span>
-                                        <div class="filter__title">Фильтр</div>
-                                    </button>
+                                    
                                 </li>
                             </ul>
+                            <button class="filter">
+                                <span class="filter__button">
+                                    <svg class="filter__icon">
+                                        <use xlink:href="#filter"></use>
+                                    </svg>
+                                </span>
+                                <div class="filter__title">Фильтр</div>
+                            </button>
                         </div>
                         <ul class="main__catalog">
                             <li class="main__item">
                                 <div class="main__item-img">
-                                    <img
-                                        src="./assets/images/chairs/Rectangle0.jpeg"
-                                        alt="chair 0"
-                                    />
+                                    <picture>
+                                        <source srcset="./assets/images/big_chairs/Rectangle0.big.jpeg" media="(min-width: 768px)">
+                                        <source srcset="./assets/images/chairs/Rectangle0.jpeg">
+                                        <img srcset="./assets/images/chairs/Rectangle0.jpeg" alt="chair0">
+                                    </picture>
                                 </div>
                                 <div class="main__item-desc">
                                     <div class="main__item-title">
@@ -1233,26 +1235,63 @@
                 </div>
             </div>
             <footer class="footer">
-                <ul class="footer__content">
-                    <li class="footer__item">
-                        <a href="#" class="menu__item-title"
-                            >Выставочные залы</a
-                        >
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="menu__item-title">О нас</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="menu__item-title">Новости</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="menu__item-title">Отзывы</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="menu__item-title">Контакты</a>
-                    </li>
-                </ul>
-                <div class="contacts menu__contacts">
+                <div class="footer__catalog catalog">
+                    <div class="catalog__title footer__title">Каталог</div>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-ref"
+                                >Мягкая мебель</a
+                            >
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-ref"
+                                >Кухонная мебель</a
+                            >
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-ref"
+                                >Для прихожей</a
+                            >
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-ref"
+                                >Для гостиных</a
+                            >
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-ref">Столы</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-ref">Детские</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#" class="catalog__item-ref">Спальни</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__content-title footer__title">Магазин</div>
+                    <ul class="footer__content-list">
+                        <li class="footer__item">
+                            <a href="#" class="menu__item-title"
+                                >Выставочные залы</a
+                            >
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="menu__item-title">О нас</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="menu__item-title">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="menu__item-title">Отзывы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="menu__item-title">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts menu__contacts footer__contacts">
                     <div class="menu__contacts-wrap">
                         <svg class="menu__contacts-icon icon menu__item-icon">
                             <use xlink:href="#phone"></use>
@@ -1271,18 +1310,28 @@
                                 <use xlink:href="#instagram"></use>
                             </svg>
                         </a>
-                        <div class="footer__adress">
-                            Россия, г. Рузаевка, ул. Карла Маркса, 16-г,
-                        </div>
-                        <a href="#" class="footer__privacy privacy"
-                            >Политика конфиденциальности</a
-                        >
-                        <div class="footer__name">
-                            Точно Мебель — магазин мебели, 2020
-                        </div>
-                        <div class="footer__maker">
-                            Сделано в <a href="#">OnlineBees</a>
-                        </div>
+                    </div>
+                    
+                </div>
+                <div class="footer__logo-adress-privacy">
+                    <div class="footer__logo-container">
+                        <svg class="logo footer__logo">
+                            <use xlink:href="#logo-black"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__adress">
+                        Россия, г. Рузаевка, ул. Карла Маркса, 16-г,
+                    </div>
+                    <a href="#" class="footer__privacy privacy"
+                        >Политика конфиденциальности</a
+                    >
+                </div>
+                <div class="footer__last-item">
+                    <div class="footer__name">
+                        Точно Мебель — магазин мебели, 2020
+                    </div>
+                    <div class="footer__maker">
+                        Сделано в <a href="#">OnlineBees</a>
                     </div>
                 </div>
             </footer>

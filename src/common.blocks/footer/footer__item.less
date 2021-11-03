@@ -2,4 +2,11 @@
     list-style: none;
     padding: 12px 0;
     font-weight: 600;
+    @media (min-width:768px){
+        padding: 0;
+        font-weight: normal;
+        & > a.menu__item-title{
+            justify-content: start;
+        }
+    }
 }

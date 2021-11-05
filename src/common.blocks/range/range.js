@@ -12,6 +12,8 @@ for (let i = 0; i < ranges.length; i++) {
   indicatorFrom.value = min.value;
   indicatorTo.value = max.value;
 
+  const intToDecade = x => String(x).replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
   min.addEventListener('input', (event) => {
     const {
       target: { value },
@@ -20,8 +22,8 @@ for (let i = 0; i < ranges.length; i++) {
             +value + BETWEEN_THUMBS > +max.value
               ? +value + BETWEEN_THUMBS
               : max.value;
-    indicatorFrom.value = value;
-    indicatorTo.value = max.value;
+    indicatorFrom.value = intToDecade(value);
+    indicatorTo.value = intToDecade(max.value);
   });
   max.addEventListener('input', (event) => {
     const {
@@ -31,8 +33,8 @@ for (let i = 0; i < ranges.length; i++) {
             +value - BETWEEN_THUMBS < min.value
               ? value - BETWEEN_THUMBS
               : min.value;
-    indicatorTo.value = value;
-    indicatorFrom.value = min.value;
+    indicatorTo.value = intToDecade(value);
+    indicatorFrom.value = intToDecade(min.value);
   });
 
   indicatorFrom.addEventListener('change', (event) => {
